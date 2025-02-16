@@ -29,10 +29,10 @@ from botocore.exceptions import ClientError
 #def upload_item_to_dynamodb(table_name, item):
   #  table = dynamodb.Table(table_name)
     
-try:
+#try:
      #   response = table.put_item(Item=item)
-except ClientError as e:
-        print(f"Error uploading item: {e.response['Error']['Message']}")
+#except ClientError as e:
+        #print(f"Error uploading item: {e.response['Error']['Message']}")
 
 
 
