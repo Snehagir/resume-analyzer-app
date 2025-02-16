@@ -169,7 +169,12 @@ def main():
                         'response': analysis.split('</think>')[1]
                     }
 
-                    #upload_item_to_dynamodb(table_name, item)
+                    upload_item_to_dynamodb(table_name, item)
+                    try:
+                        #csdwdwd
+                   except:
+                        pass
+                    
 
                     if analysis:
                         st.markdown(f"""<div class="analysis-box-think"><h2>Thinking</h2>{analysis.split('</think>')[0]}</div> 
