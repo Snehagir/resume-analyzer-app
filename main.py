@@ -168,12 +168,11 @@ def main():
                         'think': analysis.split('</think>')[0],
                         'response': analysis.split('</think>')[1]
                     }
-
-                    upload_item_to_dynamodb(table_name, item)
-                    try:
-                        #csdwdwd
-                        except:
-                    pass
+                     try:
+                        # upload_item_to_dynamodb(table_name, item)
+                       
+                    except:
+                        pass
                     
 
                     if analysis:
